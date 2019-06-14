@@ -6,7 +6,7 @@ USER root
 
 ENV NODE_VERSION 8.16.0
 
-RUN && apk add --no-cache \
+RUN apk add --no-cache \
         libstdc++ \
     && apk add --no-cache --virtual .build-deps \
         binutils-gold \
